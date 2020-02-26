@@ -8,40 +8,15 @@ html {
 }
 
 body {
-    padding: 20px;
-    background-color: $ltGray;
-    color: $black;
-    font-family: 'Roboto', sans-serif;
+    padding:0;
+    font-family:$base-font;
     line-height: 1.3;
-
-    @media #{$mq-1000-up}{
-        padding: 1.5rem;
-    }
+    color:$normal-color;
 }
-
-main {
-    padding: 20px;
-    background-color: $white;
-    border-radius: 15px;
-    max-width: 1200px;
-    margin: 0 auto;
-
-    @media #{$mq-1000-up}{
-        display: flex;
-        padding: 1.5rem;
-    }
+ul{
+    padding:0;
+    margin: 0;
 }
-
-.content {
-    
-    @media #{$mq-1000-up}{
-        flex: 3;
-    }
-}
-
-aside {
-
-    @media #{$mq-1000-up}{
-        flex: 1;
-    }
+li{
+    list-style: none;
 }

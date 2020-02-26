@@ -1,0 +1,99 @@
+
+//  START shpping cart counter button group mixins
+// wrapper and input field styles
+@mixin counter_buttongroup_wrap {
+    width:70px;
+    height:50px;
+    display: flex;
+    border-radius:6px;
+    border: solid 1px $grey-button-border;
+    > input{
+        width: 38px;
+        border: none;
+        margin-left: 2px;
+        text-align: center;
+        color:$input-color;
+    }
+}
+//  incriment & decriment buttons styles
+@mixin counter_buttons {
+    width: 30px;
+    border: none;
+    background: $input-grey-button;
+    border-bottom-right-radius: 5px;
+    border-top-right-radius: 5px;
+    svg.banner-btngroupinput{
+        width: 100%;
+        border: none;
+        text-align: center;
+        font-size: 12px;
+        margin: 0;
+        color:$input-color;
+        padding: 3px;
+        height: 20px;
+    }
+}
+// END shpping cart counter button group mixins
+
+
+// START main button styles
+@mixin main_button {
+    border-radius: 5px;
+    border: none;
+    height:50px;
+    padding: 0 30px; 
+}
+// END main button styles
+
+
+// START services and features section mixins 
+    // mixins for cards
+@mixin card_item {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    width:65px;
+    height:65px; 
+    border-radius:22px;
+    svg{
+        margin: auto;
+        font-size: 14px;
+    }
+}
+@mixin card_item_purple {
+    background: $purple_bg;
+    svg{
+        color: $purple_icon;
+    }
+}
+@mixin card_item_green{
+    background: $green_bg;
+    svg{
+        color: $green_icon;
+    }
+}
+@mixin card_item_red{
+    background: $red_bg;
+    svg{
+        color: $black_icon;
+    }
+}
+@mixin card_item_blue{
+    background: $blue_bg;
+    svg{
+        color: $blue_icon;
+    }
+}
+@mixin card_item_orange{
+    background: $orange_bg;
+    svg{
+        color: $orange_icon;
+    }
+}
+@mixin card_item_yellow{
+    background: $yellow_bg;
+    svg{
+        color: $yellow_icon;
+    }
+}
+// END services and features section mixins 

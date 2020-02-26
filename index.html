@@ -13,40 +13,377 @@
         <title></title>
 
         <!-- Google Fonts -->
-        <link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet"> 
-        
-        <!-- CSS File -->
-        <link rel="stylesheet" href="dist/style.css?cb=1572492103778">
+        <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900&display=swap" rel="stylesheet">
+
+        <!-- CSS Files -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        <link rel="stylesheet" href="dist/style.css?cb=1582703052992">
     </head>
-    <body>
+    <body> <!-- Start Body Tag -->
+        <header> <!-- Start header Tag -->
+            <nav class="nav navbar navbar-expand-sm navbar-light  container-fluid"> <!-- Start nav Tag -->
+                <a class="navbar-brand" href="#">logo</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarNavDropdown" aria-expanded="true" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+                    <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#">Shop</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Products</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Services</a>
+                        </li>
+                        <li class="nav-item lastitem">
+                            <a class="nav-link" href="#">Contacts</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="cart_btn">
+                    <span>cart </span>
+                    <span class="number">2</span>
+                </div> <!-- top right cart button -->
+            </nav> <!-- End nav Tag -->
+        </header> <!-- End header Tag -->
 
-        <main>
-            <section class="content">
-                <h1>Front-end Boilerplate</h1>
-                <h2>Using Sass and Gulp</h2>
+        <main><!-- Start main Tag -->
+            <section class="banner"> <!-- Start banner section -->
+                <div class="container-xl">
+                    <div class="row">
+                        <div class="col-md-6 col-sm-12">
+                            <img src='./img/mobile.png' class="banner-product" />
+                        </div>
+                        <div class="col-md-6 col-sm-12">
+                            <h1 class="banner-display_text">
+                                Studio-like photos. Without the studio.
+                            </h1>
+                            <p class="banner-article_paragraph">
+                                Never worry about storing, finding, or sharing your memories thanks 
+                                to unlimited storage in high quality on Google Photos.
+                            </p>
+                            <form>
+                                <div class="banner-wrapper_btngroup">
+                                    <div class="banner-counter">
+                                        <input type="text" value="0" id="noOfRoom">
+                                        <div class="banner-btngroup">
+                                            <input type="button"  value=" " class="fa fa-angle-up banner-btngroupinput" id="adds" onclick="add()">
+                                            <input type="button" value=" " class="fa fa-angle-down banner-btngroupinput"  id="subs" onclick="subst()" disabled>
+                                        </div>
+                                    </div>
+                                    <button class="banner-green_button">buy for $999</button>
+                                </div>
+                            </form>
+                            <span class="banner-image_textnote">The product image is taken from store.google.com</span>
+                        </div>
+                    </div>
+                </div>
+            </section> <!-- End banner section -->
 
-                <p>
-                    Here's a quick set-up guide:
-                </p>
+            <section class="services"> <!-- Start services section -->
+                <div class="container">
+                    <div  class="row">
+                        <div class="col-md-6 col-sm-12">
+                            <h1 class="banner-display_text">
+                                Help us change how teams communicate
+                            </h1>
+                            <div class="row">
+                                <div class="services-card  col-6">
+                                    <div class="services-image_wrap services-purple">
+                                        <i class="fas fa-shopping-basket"></i>
+                                    </div>
+                                    <div class="services-card">
+                                        <h5 class="services-headline_2">Engage Customers</h5>
+                                        <p class="services-text">It is a long established fact that a reader will be</p>
+                                    </div>
+                                </div>
+                                <div class="services-card  col-6">
+                                    <div class="services-image_wrap services-green">
+                                        <i class="fas fa-envelope"></i>
+                                    </div>
+                                    <div class="services-card">
+                                        <h5 class="services-headline_2">Engage Customers</h5>
+                                        <p class="services-text">It is a long established fact that a reader will be</p>
+                                    </div>
+                                </div>
+                                <div class="services-card  col-6">
+                                    <div class="services-image_wrap services-red">
+                                        <i class="fas fa-user"></i>
+                                    </div>
+                                    <div class="services-card">
+                                        <h5 class="services-headline_2">Engage Customers</h5>
+                                        <p class="services-text">It is a long established fact that a reader will be</p>
+                                    </div>
+                                </div>
+                                <div class="services-card  col-6">
+                                    <div class="services-image_wrap services-blue">
+                                        <i class="fas fa-lock"></i>
+                                    </div>
+                                    <div class="services-card">
+                                        <h5 class="services-headline_2">Engage Customers</h5>
+                                        <p class="services-text">It is a long established fact that a reader will be</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-sm-12 services-product">
+                            <div>
+                                <img src='./img/services.png' class="services-img" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section> <!-- End services section -->
 
-                <ul>
-                    <li>Clone Git repo</li>
-                    <li>Install by running "npm install" on the commmand line</li>
-                    <li>Run "gulp" on the command line.</li>
-                </ul>
+            <section class="features"> <!-- Start features section -->
+                <div class="container">
+                    <div class="row">
+                        <div class="col">
+                            <h1 class="features-title">We believe in helping people pay attention to what matters</h1>
+                            <p class="features-article_paragraph">
+                                Never worry about storing, finding, or sharing your memories thanks 
+                                to unlimited storage in high quality on Google Photos.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="features-card  col-md-4 col-6">
+                            <div class="features-image_wrap features-purple">
+                                <i class="fas fa-shopping-basket"></i>
+                            </div>
+                            <div class="features-card">
+                                <h5 class="features-headline_2">Engage Customers</h5>
+                                <p class="features-text">It is a long established fact that a reader will be distracted</p>
+                            </div>
+                        </div>
+                        <div class="features-card  col-md-4 col-6">
+                            <div class="features-image_wrap features-orange">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="features-card">
+                                <h5 class="features-headline_2">Email Marketing</h5>
+                                <p class="features-text">It is a long established fact that a reader will be distracted</p>
+                            </div>
+                        </div>
+                        <div class="features-card  col-md-4 col-6">
+                            <div class="features-image_wrap features-blue">
+                                <i class="fas fa-users"></i>
+                            </div>
+                            <div class="features-card">
+                                <h5 class="features-headline_2">Team Accounts</h5>
+                                <p class="features-text">It is a long established fact that a reader will be distracted</p>
+                            </div>
+                        </div>
+                        <div class="features-card  col-md-4 col-6">
+                            <div class="features-image_wrap features-green">
+                                <i class="fas fa-lock"></i>
+                            </div>
+                            <div class="features-card">
+                                <h5 class="features-headline_2">Security Managment</h5>
+                                <p class="features-text">It is a long established fact that a reader will be</p>
+                            </div>
+                        </div>
+                        <div class="features-card col-md-4 col-6">
+                            <div class="features-image_wrap features-red">
+                                <i class="fas fa-user"></i>
+                            </div>
+                            <div class="features-card">
+                                <h5 class="features-headline_2">User Administration</h5>
+                                <p class="features-text">It is a long established fact that a reader will be</p>
+                            </div>
+                        </div>
+                        <div class="features-card col-md-4 col-6">
+                            <div class="features-image_wrap features-yellow">
+                                <i class="fas fa-fire"></i>
+                            </div>
+                            <div class="features-card">
+                                <h5 class="features-headline_2">Digital Agency</h5>
+                                <p class="features-text">It is a long established fact that a reader will be</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12">
+                            <button class="features-button">Explore All Features</button>
+                        </div>
+                    </div>
+                </div>
+            </section> <!-- End features section -->
 
-            </section>
-            
-            <aside>
-                <h3>Project Info</h3>
-                <p>
-                    This is a starter front-end project which will compile SCSS and JS files using Gulp 4.
-                </p>
-            </aside>
-            
-        </main>
+            <section class="pricing"> <!-- Start pricing section -->
+                <div class="container">
+                    <div class="row">
+                        <div class="col pricing-display_titles">
+                            <h1 class="pricing-title">Pricing Options</h1>
+                            <p class="pricing-article_paragraph">
+                                Create screens directly in Singleton or add your images from Sketch or Figma. You can even sync designs from your cloud storage!
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="pricing-price_card  col">
+                            <div class="pricing-card_titles">
+                                <h5 class="pricing-headline_2">Engage Customers</h5>
+                                <p class="pricing-text">It is a long established fact that a reader will be</p>
+                            </div>
+                            <div class="row pricing-price_tag">
+                                <div class="col-7 ">
+                                    <h1>$8.99</h1>
+                                </div>
+                                <div class="col-5 pricing-paragraph_wrap">
+                                    <p class="pricing-paragraph">per month</p>
+                                    <p class="pricing-paragraph">per user</p>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-12">
+                                    <button class="pricing-button">Select</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="pricing-price_card  col">
+                            <div class="pricing-card_titles">
+                                <h5 class="pricing-headline_2">Engage Customers</h5>
+                                <p class="pricing-text">It is a long established fact that a reader will be</p>
+                            </div>
+                            <div class="row pricing-price_tag">
+                                <div class="col-7 ">
+                                    <h1>$8.99</h1>
+                                </div>
+                                <div class="col-5 pricing-paragraph_wrap">
+                                    <p class="pricing-paragraph">per month</p>
+                                    <p class="pricing-paragraph">per user</p>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-12">
+                                    <button class="pricing-button">Select</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="pricing-price_card  col">
+                            <div class="pricing-card_titles">
+                                <h5 class="pricing-headline_2">Engage Customers</h5>
+                                <p class="pricing-text">It is a long established fact that a reader will be</p>
+                            </div>
+                            <div class="row pricing-price_tag">
+                                <div class="col-7 ">
+                                    <h1>$8.99</h1>
+                                </div>
+                                <div class="col-5 pricing-paragraph_wrap">
+                                    <p class="pricing-paragraph">per month</p>
+                                    <p class="pricing-paragraph">per user</p>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-12">
+                                    <button class="pricing-button">Select</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>   
+            </section><!-- End pricing section -->
 
-        <!-- JavaScript File -->
-        <script src="dist/all.js?cb=1572492103778"></script>
+            <section class="subscribe"> <!-- Start subscribe section -->
+                <div class="container-fluid">
+                    <div class="row subscribe-colum_wrap">
+                        <div class="col-md-6 col-xs-6 subscribe-leftside p-0">
+                            <div class="subscribe-img_wrap">
+                                <img src='./img/calender.png' class="subscribe-img" />
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-xs-6 subscribe-rightside">
+                            <h5 class="subscribe-headline">Product of the day</h5>
+                            <h2 class="subscribe-title">The easiest way to turn your passion into income</h2>
+                            <p class="subscribe-article">Create screens directly in Singleton or add your images from Sketch or Figma. You can even sync designs from your cloud storage!</p>
+                            <div class="subscribe-form_wrap">
+                                <form>
+                                    <div class="subscribe-input_wrapper">
+                                        <i class="fas fa-envelope"></i>
+                                        <input class="subscribe-input"  placeholder="type your e-mail">
+                                    </div>
+                                    <button class="subscribe-button">Download Now</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>  <!-- End subscribe section -->
+        </main> <!-- End main tag -->
+
+        <footer class="footer"> <!-- Start footer section -->
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-5  col-xs-12 footer-left_side">
+                        <p class="footer-left_para">
+                            We point past each other with our words, arguing as though we are looking at the same facts and experiences.
+                        </p>
+                        <div class="row">
+                            <div class="col-12">
+                                <button class="footer-button">Ask Question</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-7">
+                        <div class="row">
+                            <div class="col-md-4 col-xs-12">
+                                <p>About</p>
+                                <ul>
+                                    <li class="footer-li">Our Mission</li>
+                                    <li class="footer-li">Our Story</li>
+                                    <li class="footer-li">Our Culture</li>
+                                    <li class="footer-li">The Team</li>
+                                </ul>
+                            </div>
+                            <div class="col-md-4  col-xs-12">
+                                <p>Blog</p>
+                                <ul>
+                                    <li class="footer-li">Business Stories</li>
+                                    <li class="footer-li">Digital Mums</li>
+                                    <li class="footer-li">Learning</li>
+                                    <li class="footer-li">Social Media</li>
+                               </ul>
+                            </div>
+                            <div class="col-md-4  col-xs-12">
+                                <p  class="footer-get_in_touch">
+                                    Fell free get in touch with us via phone or send us a message
+                                </p>
+                                <br/>
+                                <p class="footer-get_in_touch">
+                                    +12 699 241-395
+                                </p>
+                                <p class="footer-get_in_touch">
+                                    hello@sample.example
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <hr>
+                    <div class="col-8 p-md-0 px-xs-1">
+                        <p class="footer-copyright">© 2020 Sample. All rights reserved.</p>
+                    </div>
+                    <div class="col-4 footer-social p-md-0 px-xs-1"> 
+                        <div class="float-right footer-icons ">
+                            <i class="fab fa-linkedin-in"></i>
+                        <i class="fab fa-google"></i>
+                        <i class="fab fa-twitter"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer> <!-- End footer section -->
+
+        <!-- JavaScript Files -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+        <script src="dist/all.js?cb=1582703052992"></script>
+
+        <!-- Font Awesome -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>
     </body>
 </html>
