@@ -62,13 +62,27 @@ $peaceblue:#33699D;
     }
 }
 .cardwrap{
+    display:flex;
+    flex-wrap: wrap;
     .card{
-        width: 100%;
-        max-width: 220px;
+        width: 250px;
         border: none;
         color:$white; 
-        height: 220px;
-        border-radius: 0; 
+        height: 250px;
+        border-radius: 0;
+        @media #{$mq-1200-down}{
+            margin-right: 25px;
+            margin-left: 0 !important;
+            margin-top: 25px !important;
+        }
+        @media #{$mq-768-down}{
+            width:220px;
+            height:220px;
+        }  
+        @media #{$mq-620-down}{
+            width:200px;
+            height:200px;
+        }
         &-header{
             background: none;
             border: none;
@@ -77,6 +91,10 @@ $peaceblue:#33699D;
         &-text{
             font-size: 1.2rem;
             font-weight: 600;
+            @media #{$mq-768-down}{
+                font-size: 1rem;
+            font-weight: 600;
+            }
         }
         &-img_wrapper{
             padding: 0 30px;
