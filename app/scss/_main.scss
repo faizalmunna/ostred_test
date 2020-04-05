@@ -4,278 +4,86 @@
 // all the variables are inside _variable.scss file
 
 // landing page's first section  styles (right below navbar) goes here
-.banner{
-    &-product{
-        padding:0;
-        @media #{$mq-768-down}{
-            padding:60px;
-        }
-    }
-    &-display_text{
-        // banner text styles
-        padding:50px 0 0 0;
-    }
-    &-article_paragraph{
-        @include article_font_greycolor;
-    }
-    &-wrapper_btngroup{
-        display: flex;
-    }
-    &-counter{
-        // counter button group styles form _mixins.scss
-        @include counter_buttongroup_wrap
-    }
-    &-btngroup{
-        // counter button group styles form _mixins.scss
-        @include counter_buttons
-    }
-    &-green_button{
-        @include main_button;
-        margin-left: 20px;
-        background:$buy-button;
-        color: $white;
-        border: 1px solid $green-button-border;
-        &:hover{
-            background:$white;
-            border: 1px solid $grey-button-border;
-            color: $button-purple-hover;
-        }
-    }
-    &-image_textnote{
-        @include paragraph_3_greycolor;
-        width:100%;
-        text-align: center;
-        display: block;
-        height:100%;
-        padding-top: 80px;
-        font-weight: 300;
-        @media #{$mq-900-down}{
-            padding-top: 20px;
-        } 
-    }
-}
+$yelowcolor:#EEC20B;
+$greencolor:#3F7E44;
+//
+$bagecolor:#A21C42;
+$yelloishorangecolor:#E89B24;
+$lightbrowncolor:#BF8B2E;
+$seabluecolor:#4E98D9;
+$tregreencolor:#56C02B;
+//
+$lifegreencolor:#4C9F38;
+$lightredcolor:#DE3121;
+$industryorange:#E26525;
+$sustainyellow:#E89B24;
+$productionbrown:#BF8B2E;
+$peaceblue:#33699D;
 
-// all services section styles goes here
-.services{
-    margin-top:80px;
-    &-image_wrap{
-       @include card_item;
-       margin:25px 0;
-    }
-    &-headline_2{
-        @include headline_2;
-    }
-    &-text{
-        @include article_1;
-    }
-    &-purple{
-        @include card_item_purple;
-    }
-    &-green{
-        @include card_item_green;
-    }
-    &-red{
-        @include card_item_red;
-    }
-    &-blue{
-        @include card_item_blue;
-    }
-    &-img{
-        float: right;
-    }
-}
+.yelowcolor{background:$yelowcolor;}
+.greencolor{background:$greencolor;}
 
-// all features section styles goes here
-.features{
-    margin-top:120px;
-    font-weight: 300;
+.bagecolor{background:$bagecolor;}
+.yelloishorangecolor{background:$yelloishorangecolor;}
+.lightbrowncolor{background:$lightbrowncolor;}
+.seabluecolor{background:$seabluecolor;}
+.tregreencolor{background:$tregreencolor;}
+
+.lifegreencolor{background:$lifegreencolor;}
+.lightredcolor{background:$lightredcolor;}
+.industryorange{background:$industryorange;}
+.sustainyellow{background:$sustainyellow;}
+.productionbrown{background:$productionbrown;}
+.peaceblue{background:$peaceblue;}
+
+.header{
+  &__banner{
+  }
+  &__title{
+    color:$bannerblue;
+    z-index:99;
+    font-size:4rem;
+    padding-left: 30px;
+  }
+  &__banner_img{
+
+  }
+}
+.display-4{
+    font-weight: 700;
+    line-height: 55px;
+    margin-right:5px;
+}
+.section{
     &-title{
-        text-align: center;
-        font-weight:400;
-    }
-    &-article_paragraph{
-        @include article_font_greycolor;
-        text-align: center;
-        max-width: 800px;
-        margin: auto;
-    }
-    &-headline_2{
-        @include headline_2;
-    }
-    &-text{
-        @include article_1;
-    }
-    &-image_wrap{
-        @include card_item;
-        margin: 25px auto;
-    }
-    &-card{
-        text-align: center;
-        margin:30px 0 10px 0;
-    }
-    &-purple{
-        @include card_item_purple;
-    }
-    &-green{
-        @include card_item_green;
-    }
-    &-orange{
-        @include card_item_orange;
-    }
-    &-yellow{
-        @include card_item_yellow;
-    }
-    &-red{
-        @include card_item_red;
-    }
-    &-blue{
-        @include card_item_blue;
-    }
-    &-button{
-        @include main_button;
-        display: flex;
-        width: 220px;
-        background:$buy-button;
-        color: $white;
-        border: 1px solid $green-button-border;
-        margin: 40px auto;
-        &:hover{
-            background:$white;
-            border: 1px solid $grey-button-border;
-            color: $button-purple-hover;
-        }
+        font-size: 1.5rem;
+        font-weight: 100;
+        padding: 30px 0  20px 0;
     }
 }
-// all pricing section styles goes here
-.pricing{
-    margin:100px 0;
-    &-display_titles{
-        margin:50px 0;
-    }
-    &-title{
-        text-align: center;
-    }
-    &-article_paragraph{
-        @include article_font_greycolor;
-        font-size: $article_1-font;
-        max-width: 700px;
-        margin: auto;
-        text-align: center;
-
-    }
-    &-price_card{
-        margin: 0 15px;
-        padding: 30px;
-        border:1px solid $grey-button-border;
-        border-radius:10px;
-        @media #{$mq-768-down}{
-            margin:15px 15px 0 15px;
-        }
-    }
-    &-headline_2{
-        @include headline_2;
-        text-align: left;
-    }
-    &-text{
-        @include article_1_font_greycolor;
-        text-align: left;
-    }
-    &-price_tag{
-        margin-bottom:15px;
-    }
-    &-button{
+.cardwrap{
+    .card{
         width: 100%;
-        @include main_button;
-        margin: 5px auto;
-        text-align: center;
-        background:$white;
-        border: 1px solid $grey-button-border;
-        color: $button-purple-hover;
-        &:hover{
-            background:$button-purple-hover;
-            color:$white;
-            border: 1px solid $button-purple-hover;
+        max-width: 220px;
+        border: none;
+        color:$white; 
+        height: 220px;
+        border-radius: 0; 
+        &-header{
+            background: none;
+            border: none;
+            padding:.7rem;
         }
-    }
-    &-paragraph_wrap{
-        margin-top:15px;
-    }
-    &-paragraph{
-        @include paragraph_3_greycolor;
-        margin:5px;
-    }
-}
-// all subscribe sections styles goes here
-.subscribe{
-    background-color: $subscribe-section-bg;
-    color:$white;
-    &-leftside{
-        margin:2% 0;
-    }
-    &-rightside{
-        max-width:600px;
-        margin:7% 0;
-    }
-    &-img_wrap{
-        margin-right:5%;
-    }
-    &-img{
-        width: 95%;
-        padding: 50px 50px 50px 0;
-        background-size: cover;
-    }
-    &-headline{
-        font-size: $headeline_2-font;
-        font-weight: 300;
-    }
-    &-title{
-        font-size: $display2-font;
-        font-weight: 300;
-    }
-    &-article{
-        font-size:$article-font;
-        font-weight: 300;
-        opacity:.6;
-        margin-bottom: 25px;
-    }
-    &-form_wrap{
-        width:350px;
-        input,button{
-            @include main_button;
-            width:350px;
-            outline: none;
+        &-text{
+            font-size: 1.2rem;
+            font-weight: 600;
         }
-    }
-    &-input_wrapper{
-        position: relative;
-        height: 50px;
-        svg{
-            position: absolute;
-            color: $form-input-placeholder;
-            z-index: 99999;
-            margin: 17px;
-        }
-    }
-    &-input{
-        position: absolute;
-        text-indent: 25px;
-        color: $form-input-placeholder;
-        
-    }
-    input::placeholder{
-        color: $form-input-placeholder;
-    }
-    &-button{
-        margin: 15px 0;
-        @include main_button;
-        text-align: center;   
-        background:$button-purple-hover;
-        color:$white;
-        border: 1px solid $button-purple-hover;
-        &:hover{
-            background:$white;
-            border: 1px solid $grey-button-border;
-            color: $button-purple-hover; 
-        }
+        &-img_wrapper{
+            padding: 0 30px;
+            img{
+                width: 80%;
+                margin-left:10%;
+            }
+        } 
     }
 }

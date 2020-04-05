@@ -1,51 +1,6 @@
 header{
-    display: flex;
-    .logo{
-        @media #{$mq-768-down}{
-            text-align: center;
-        } 
-    }
-    .nav{ 
-        &-link{
-            font-size:$normal-font;
-        }
-        @media #{$mq-575-down}{
-            position: fixed;
-            z-index:9999999;
-            background-color:$white;
-        }
-        .navbar-nav{
-            margin-left:auto; 
-            margin-right:0;
-        }
-        button{
-            outline: none;
-        }
-    }
-    .cart_btn{
-        font-size: $paragraph_3;
-        font-weight: 300;
-        .number{
-            background-color: #6ac75a;
-            color: #fff;
-            border-radius: 20px;
-            width: 20px;
-            display: inline-block;
-            height: 20px;
-            text-indent: 6px;
-            font-size: 12px;
-            line-height: 20px;
-        }
-        @media #{$mq-575-down}{
-            position: fixed;
-            right:50%;
-            top:20px;
-        } 
-    }
+   
     @media #{$mq-768-down}{
-        flex-direction: column;
-        z-index:9999999;
-        background-color:$white;
-        height: 60px;
+
     }
 }
