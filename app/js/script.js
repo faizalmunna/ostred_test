@@ -94,10 +94,3 @@ $.getJSON('../../app/data.json', function(data){
 .always(function(){
     console.log("always runs");
 });
-
-// $(".omxc_percentage").val().toFixed(2);
-// $(".omxc_percentage2").val().toFixed(2);
-
-$( document ).ready(function() {
-   
-});
