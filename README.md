@@ -5,7 +5,7 @@ npm start
  need to cofigure node server to view the second test
 Install http-server by typing npm install -g http-server
 
-Change into your working directory, where yoursome.html lives
+Change into your working directory, where test2.html lives
 
 Start your http server by issuing http-server -c-1
 
