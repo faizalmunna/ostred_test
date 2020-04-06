@@ -3,23 +3,6 @@
 // all the mixins are inside _mixins.scss file
 // all the variables are inside _variable.scss file
 
-// landing page's first section  styles (right below navbar) goes here
-$yelowcolor:#EEC20B;
-$greencolor:#3F7E44;
-//
-$bagecolor:#A21C42;
-$yelloishorangecolor:#E89B24;
-$lightbrowncolor:#BF8B2E;
-$seabluecolor:#4E98D9;
-$tregreencolor:#56C02B;
-//
-$lifegreencolor:#4C9F38;
-$lightredcolor:#DE3121;
-$industryorange:#E26525;
-$sustainyellow:#E89B24;
-$productionbrown:#BF8B2E;
-$peaceblue:#33699D;
-
 .yelowcolor{background:$yelowcolor;}
 .greencolor{background:$greencolor;}
 
@@ -37,16 +20,14 @@ $peaceblue:#33699D;
 .peaceblue{background:$peaceblue;}
 
 .header{
-  &__banner{
-  }
+    &__innerwrap {
+        max-width:1440px;
+    }
   &__title{
     color:$bannerblue;
     z-index:99;
     font-size:4rem;
     padding-left: 30px;
-  }
-  &__banner_img{
-
   }
 }
 .display-4{
@@ -99,8 +80,8 @@ $peaceblue:#33699D;
         &-img_wrapper{
             padding: 0 30px;
             img{
-                width: 80%;
-                margin-left:10%;
+                width: 70%;
+                margin-left:15%;
             }
         } 
     }

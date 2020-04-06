@@ -1,0 +1,155 @@
+
+// ---------- !important   ---------
+// all the mixins are inside _mixins.scss file
+// all the variables are inside _variable.scss file
+// color classes
+.navbar-light .navbar-nav .nav-link{
+    color: $black;
+}
+.active_color,.active_color:hover, .navbar-light .navbar-nav .nav-link:hover{
+    color:$bannerblue !important;
+    opacity:1 !important;
+}
+.display-1{
+    @media #{$mq-974-down}{
+        font-size:36px;
+    }
+}
+.header{
+    .navbar{
+        height:100px;
+        border-bottom:1px solid $nav_border_grey;
+        @media #{$mq-974-down}{
+            border-bottom: 1px solid #f3f3f3;
+            padding: 0 15px;
+            border: 0;
+        }
+        &-nav{
+            @media #{$mq-974-down}{
+                background: $white;
+                padding: 0;
+                z-index: 999;
+            }
+            
+        }
+    }
+}
+main{
+    .filter{
+        &__cards{
+            display: flex;
+            flex-wrap: wrap;
+            margin-top:50px;
+            li{
+                display: flex;
+                flex-direction: row;
+                width:100%;
+                margin-bottom: 50px;
+                @media #{$mq-768-down}{
+                    flex-direction: column;
+                }
+            }
+        }
+        &__img{
+            margin-right:10px;
+        }
+        &__card_tag{
+            background:$tag_bg_color;
+            border-radius: 5px;
+            padding: 3px 5px;
+            margin-right: 5px;
+            font-size: 12px;
+            height: 300px;
+            margin-bottom: 50px;
+        }
+        &__text{
+            h3{
+                color:$bannerblue ;
+                font-weight: bolder;
+            }
+        }
+    }
+    a[class="buildinggreen"], a[class="capital"],a[class="greentech"],a[class="nature"] , a.all {
+        background-color:$tag_bg_color;
+        color:$black;
+        padding:3px 8px;
+        border-radius: 20px;
+        height: 30px;
+        width:100%;
+        margin-top:-2px;
+        text-align: center;
+        line-height: 25px;
+        margin-right: 10px;
+        text-decoration: none;
+        @media #{$mq-620-down}{
+            font-size: 12px;
+        }
+    }
+    a[class="buildinggreen"], a[class="capital"],a[class="greentech"],a[class="nature"]{
+        
+        margin-top:10px;
+    }
+    a[class="buildinggreen"]:focus, a[class="capital"]:focus,a[class="greentech"]:focus,a[class="nature"]:focus , a.all:focus {
+        background-color: $bannerblue;
+        color:$white;
+    }
+    a[class="buildinggreen"]:focus ~ ul li:not([class="buildinggreen"])  {
+        height:0px;
+        width:0px;
+        border:none;
+        margin:0;
+        display:none;
+    }
+    a[class="capital"]:focus ~ ul  li:not([class="capital"]) {
+        height:0px;
+        width:0px;
+        border:none;
+        margin:0;
+        display:none;
+    }
+    a[class="greentech"]:focus ~ ul li:not([class="greentech"]) {
+        height:0px;
+        width:0px;
+        border:none;
+        margin:0;
+        display:none;
+    }
+    a[class="nature"]:focus ~ ul li:not([class="nature"]) {
+        height:0px;
+        width:0px;
+        border:none;
+        margin:0;
+        display:none;
+    }
+    a[class="buildinggreen"]:focus ~ ul li.buildinggreen {
+        display:flex;
+        width:100%;
+        height: 300px;
+        margin-bottom: 50px;
+    }
+    a[class="capital"]:focus ~ ul li.capital {
+        display:flex;
+        width:100%;
+        height: 300px;
+        margin-bottom: 50px;
+    }
+    a[class="greentech"]:focus ~ ul li.greentech {
+        display:flex;
+        width:100%;
+        height: 300px;
+        margin-bottom: 50px;
+    }
+    a[class="nature"]:focus ~ ul li.nature {
+        display:flex;
+        width:100%;
+        height: 300px;
+        margin-bottom: 50px;
+    }
+    a.all, a.web, a.graphic, a.music{
+        display:block;
+        float:left;
+        width:auto;
+    }
+    
+}
+

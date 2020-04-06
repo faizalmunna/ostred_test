@@ -1,0 +1,44 @@
+// style for js elements
+.stock {
+    font-size: 90px;
+    font-weight: bold;
+    color: $bannerblue;
+    line-height: 70px;
+}
+.sharessecond{
+    padding-left: 5px;
+}
+.sharessecond::after {
+    content: " DKK /";
+}
+.sharepercentage::after {
+    content: " %";
+}
+.redcolor{
+    color:red;
+}
+.greencolor{
+    color:green;
+    background-color:$white;
+}
+.inlinewithnext{
+    float: left;
+    font-weight: 900;
+    font-size: 18px;
+}
+.below_wrap{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 15px 10px;
+}
+.updateddate > div{
+    float: left;
+}
+.time{padding-left: 5px;}
+.omxc_class > div{
+    float: left;
+}
+.omxc{
+    margin-right:10px;
+}
