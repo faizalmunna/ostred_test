@@ -2,4 +2,4 @@
 npm install
 npm start
 
-for the second test need to cofigure node server
+ need to cofigure node server to view the second test
