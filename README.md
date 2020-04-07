@@ -1,6 +1,6 @@
 # Front-end test
 npm install
-npm start
+gulp
 
  need to cofigure node server to view the second test
 Install http-server by typing npm install -g http-server
